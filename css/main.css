@@ -1,0 +1,14 @@
+.navbar > .container-fluid {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.navbar > .container-fluid .navbar-toggler {
+  border: initial;
+}
+
+.navbar > .container-fluid .navbar-brand .logo-img {
+  height: 48px;
+}
+/*# sourceMappingURL=main.css.map */

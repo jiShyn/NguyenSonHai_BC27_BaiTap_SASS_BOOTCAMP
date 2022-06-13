@@ -1,0 +1,15 @@
+.navbar>.container-fluid {
+	justify-content: flex-start;
+
+	.navbar-toggler {
+		border: initial;
+	}
+
+	.navbar-brand {
+		// order: 2;
+		.logo-img {
+			height: 48px;
+		}
+	}
+	
+}

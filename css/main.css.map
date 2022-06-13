@@ -1,0 +1,20 @@
+{
+    "version": 3,
+    "mappings": "AOAA,AAAA,OAAO,GAAC,gBAAgB,CAAC;EACxB,eAAe,EAAE,UAAU;CAa3B;;AAdD,AAGC,OAHM,GAAC,gBAAgB,CAGvB,eAAe,CAAC;EACf,MAAM,EAAE,OAAO;CACf;;AALF,AASE,OATK,GAAC,gBAAgB,CAOvB,aAAa,CAEZ,SAAS,CAAC;EACT,MAAM,EAAE,IAAI;CACZ",
+    "sources": [
+        "../scss/main.scss",
+        "../scss/Helpers/_variables.scss",
+        "../scss/Helpers/_mixin.scss",
+        "../scss/Base/_reset.scss",
+        "../scss/Base/_base.scss",
+        "../scss/Components/_button.scss",
+        "../scss/Components/_card.scss",
+        "../scss/Layouts/_header.scss",
+        "../scss/Layouts/_aboutUs.scss",
+        "../scss/Layouts/_ourTeams.scss",
+        "../scss/Layouts/_course.scss",
+        "../scss/Layouts/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
