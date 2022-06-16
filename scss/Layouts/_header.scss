@@ -94,8 +94,8 @@
    .navbar > .container .navbar-brand .logo-img {
       height: auto;
       width: 80px;
-  }
-  
+   }
+
    .navbar-expand-lg .navbar-nav .dropdown-menu {
       top: 100%;
       left: 0;
@@ -124,7 +124,7 @@
 
       &.dropdown-menu-1 {
          width: 680px;
-         transform: translateX(-40%);
+         // transform: translateX(-40%);
 
          .dropdown-sub-menu {
             li:nth-child(1) a.dropdown-item {
@@ -141,7 +141,8 @@
 
       &.dropdown-menu-2,
       &.dropdown-menu-3 {
-         @include padding-x-24 li a {
+         @include padding-x-24;
+         li a {
             @include border-bottom-color(0.8px, 0.5);
          }
 
@@ -186,6 +187,22 @@
                @include border-bottom-color(0.8px, 0.7);
             }
          }
+      }
+   }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+   .navbar-expand-lg .navbar-nav .dropdown-menu {
+      &.dropdown-menu-1 {
+         transform: translateX(1%);
+      }
+   }
+}
+
+@media (min-width: 1201px) {
+   .navbar-expand-lg .navbar-nav .dropdown-menu {
+      &.dropdown-menu-1 {
+         transform: translateX(-40%);
       }
    }
 }
