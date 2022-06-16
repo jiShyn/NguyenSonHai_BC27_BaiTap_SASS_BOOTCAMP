@@ -1,14 +1,468 @@
-.navbar > .container-fluid {
+/*
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+
+	Eric Meyer					:: https://meyerweb.com
+	HTML5 Doctor				:: https://html5doctor.com
+	and the HTML5 Boilerplate	:: https://html5boilerplate.com
+
+-------------------------------------------------------------------------------*/
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+article, aside, figure, footer, header, nav, section, details, summary {
+  display: block;
+}
+
+/* Handle box-sizing while better addressing child elements:
+   https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+/* Responsive images and other embedded objects
+*/
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+/*
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+	 In fact, it *will* cause problems with Google Maps' controls at small size.
+	If this is the case for you, try uncommenting the following:
+
+#map img {
+		max-width: none;
+}
+*/
+/* force a vertical scrollbar to prevent a jumpy page */
+html {
+  overflow-y: scroll;
+}
+
+/* we use a lot of ULs that aren't bulleted.
+	don't forget to restore the bullets within content. */
+ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+td {
+  font-weight: normal;
+  vertical-align: top;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+pre {
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word;
+  /* IE */
+}
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+select, input, textarea {
+  font: 99% sans-serif;
+}
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+small {
+  font-size: 85%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+td, td img {
+  vertical-align: top;
+}
+
+/* Make sure sup and sub don't mess with your line-heights https://gist.github.com/413930 */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+}
+
+/* hand cursor on clickable elements */
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer;
+}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {
+  margin: 0;
+}
+
+/* make buttons play nice in IE */
+button,
+input[type=button] {
+  width: auto;
+  overflow: visible;
+}
+
+/* scale images in IE7 more attractively */
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* prevent BG image flicker upon hover
+   (commented out as usage is rare, and the filter syntax messes with some pre-processors)
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+*/
+/* let's clear some floats */
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  color: #181818;
+}
+
+body {
+  background-color: antiquewhite;
+  height: 3000px;
+}
+
+.btn-call {
+  border: 2px solid #b61984 !important;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: transparent;
+  -webkit-box-shadow: 0 0 0 3em #b61984 inset;
+          box-shadow: 0 0 0 3em #b61984 inset;
+  line-height: 1;
+  -webkit-transition: -webkit-box-shadow 0.3s linear;
+  transition: -webkit-box-shadow 0.3s linear;
+  transition: box-shadow 0.3s linear;
+  transition: box-shadow 0.3s linear, -webkit-box-shadow 0.3s linear;
+}
+
+.btn-call a.nav-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 13.5px !important;
+  font-weight: 500 !important;
+  color: #fff !important;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.btn-call a.nav-link i {
+  color: #fff !important;
+}
+
+.btn-call:hover {
+  color: #b61984;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+  border: 2px solid #b61984;
+}
+
+.btn-call:hover a.nav-link,
+.btn-call:hover a.nav-link i {
+  color: #b61984 !important;
+}
+
+.header {
+  background-color: transparent;
+}
+
+.header .navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar > .container {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
 
-.navbar > .container-fluid .navbar-toggler {
+.navbar > .container .navbar-toggler {
   border: initial;
 }
 
-.navbar > .container-fluid .navbar-brand .logo-img {
+.navbar > .container .navbar-brand .logo-img {
   height: 48px;
+}
+
+.navbar > .container .navbar-collapse .navbar-nav:first-of-type .nav-item.active::after {
+  width: 10px;
+  height: 10px;
+  z-index: 9999;
+}
+
+.navbar > .container .navbar-collapse .navbar-nav:first-of-type .nav-link {
+  line-height: 80px;
+}
+
+.navbar > .container .navbar-collapse .nav-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: #181818;
+}
+
+.navbar > .container .navbar-collapse .nav-link:hover {
+  color: #b61984 !important;
+}
+
+.navbar > .container .navbar-collapse .navbar-nav.social-list {
+  margin-left: 50px;
+}
+
+.navbar > .container .nav-item.social-item:hover .nav-link i {
+  color: #b61984 !important;
+}
+
+.dropdown-toggle::after {
+  content: unset;
+}
+
+.dropdown .dropdown-menu,
+.dropdown .dropdown-sub-menu {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  font-size: 12px;
+}
+
+.dropdown::after {
+  content: " ";
+  background-color: #b61984;
+  position: absolute;
+  z-index: 5;
+  bottom: -4px;
+  margin-left: -4px;
+  left: 50%;
+  height: 0;
+  width: 0;
+  border-radius: 50%;
+  -webkit-transition: all 0.135s ease-in;
+  transition: all 0.135s ease-in;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:hover .dropdown-sub-menu {
+  display: block;
+}
+
+.dropdown:hover::after {
+  width: 10px;
+  height: 10px;
+  z-index: 9999;
+}
+
+@media (min-width: 992px) {
+  .navbar > .container .navbar-brand .logo-img {
+    height: auto;
+    width: 80px;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    top: 100%;
+    left: 0;
+    max-width: 780px;
+    min-width: 220px;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu a {
+    text-decoration: none;
+    color: #181818;
+    font-weight: 600;
+    padding: 12px;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu a:hover {
+    color: #b61984 !important;
+    background-color: transparent;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu .col-4 > a {
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #b61984;
+    line-height: 1.7;
+    padding-bottom: 6px;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu.dropdown-menu-1 {
+    width: 680px;
+    -webkit-transform: translateX(-40%);
+            transform: translateX(-40%);
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu.dropdown-menu-1 .dropdown-sub-menu li:nth-child(1) a.dropdown-item {
+    border-bottom: 0.5px solid rgba(171, 184, 195, 0.3);
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu.dropdown-menu-1 .dropdown-sub-menu li:nth-child(2) a.dropdown-item {
+    border-bottom: 0.8px solid rgba(171, 184, 195, 0.5);
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu.dropdown-menu-1 .dropdown-sub-menu li:nth-child(3) a.dropdown-item {
+    border-bottom: 1.1px solid rgba(171, 184, 195, 0.7);
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu.dropdown-menu-2, .navbar-expand-lg .navbar-nav .dropdown-menu.dropdown-menu-3 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu.dropdown-menu-2 li a, .navbar-expand-lg .navbar-nav .dropdown-menu.dropdown-menu-3 li a {
+    border-bottom: 0.8px solid rgba(171, 184, 195, 0.5);
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu.dropdown-menu-2 li:nth-last-child(1) a, .navbar-expand-lg .navbar-nav .dropdown-menu.dropdown-menu-3 li:nth-last-child(1) a {
+    border-bottom: unset;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu.dropdown-menu-3 {
+    left: initial;
+    right: -70%;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu.dropdown-menu-3 a.dropdown-item {
+    text-align: right;
+    padding-right: 0;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu.dropdown-menu-4 {
+    width: 780px;
+    -webkit-transform: translateX(-44%);
+            transform: translateX(-44%);
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu.dropdown-menu-4 a {
+    text-align: right;
+    padding-right: 0;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu.dropdown-menu-4 .dropdown-sub-menu li:nth-child(1) a.dropdown-item {
+    border-bottom: 0.5px solid rgba(171, 184, 195, 0.3);
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu.dropdown-menu-4 .dropdown-sub-menu li:nth-child(2) a.dropdown-item {
+    border-bottom: 0.8px solid rgba(171, 184, 195, 0.5);
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu.dropdown-menu-4 .dropdown-sub-menu li:nth-child(3) a.dropdown-item {
+    border-bottom: 0.8px solid rgba(171, 184, 195, 0.7);
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu.dropdown-menu-4 .dropdown-sub-menu li:nth-child(4) a.dropdown-item {
+    border-bottom: 0.8px solid rgba(171, 184, 195, 0.7);
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu.dropdown-menu-4 .dropdown-sub-menu li:nth-child(5) a.dropdown-item {
+    border-bottom: 0.8px solid rgba(171, 184, 195, 0.7);
+  }
 }
 /*# sourceMappingURL=main.css.map */

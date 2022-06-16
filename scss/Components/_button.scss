@@ -1,0 +1,36 @@
+.btn-call {
+   border: 2px solid $border-primary-color !important;
+   padding-top: 6px;
+   padding-bottom: 6px;
+   background-color: transparent;
+   box-shadow: 0 0 0 3em #b61984 inset;
+   line-height: 1;
+   transition: box-shadow 0.3s linear;
+   a.nav-link {
+      display: block;
+      width: 100%;
+      height: 100%;
+      font-size: 13.5px !important;
+      font-weight: $btn-font-weight !important;
+      color: $white-text !important;
+      transition: none;
+   }
+
+   a.nav-link i {
+      color: $white-text !important;
+   }
+
+
+   &:hover {
+      @include hover-btn-primary;
+   }
+
+   // &:hover i {
+   //    @include hover-text;
+   // }
+
+   &:hover a.nav-link,
+   &:hover a.nav-link i {
+      @include hover-text;
+   }
+}

@@ -16,63 +16,356 @@
          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
          crossorigin="anonymous"
       />
+
+      <!-- google font -->
+      <link
+         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+         rel="stylesheet"
+      />
+      <!-- Font Awesome -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+      <!-- CSS -->
       <link rel="stylesheet" href="./css/main.css" />
    </head>
    <body>
-      <nav class="navbar navbar-expand-lg bg-light">
-         <div class="container-fluid">
-            <button
-               class="navbar-toggler"
-               type="button"
-               data-bs-toggle="collapse"
-               data-bs-target="#navbarNavDropdown"
-               aria-controls="navbarNavDropdown"
-               aria-expanded="false"
-               aria-label="Toggle navigation"
-            >
-               <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <a class="navbar-brand" href="#">
-               <img src="./img/crest.png" alt="logo image" class="logo-img" />
-            </a>
-
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-               <ul class="navbar-nav">
-                  <li class="nav-item">
-                     <a class="nav-link" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link active" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#">Course</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#">Shop</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#">Elements</a>
-                  </li>
-                  <li class="nav-item">
-                     <a href="tel: (+1) 555 234-8765" class="nav-link border rounded-pill"
-                        >(+1) 555 234-8765</a
-                     >
-                  </li>
-
-                  <ul class="social-list d-flex">
-                     <li class="social-item">Tw</li>
-                     <li class="social-item">Fb</li>
-                     <li class="social-item">Utube</li>
-                     <li class="social-item">Ins</li>
+      <section class="header">
+         <nav class="navbar navbar-expand-lg">
+            <div class="container">
+               <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavDropdown"
+                  aria-controls="navbarNavDropdown"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+               >
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <a class="navbar-brand" href="#">
+                  <img src="./img/crest.png" alt="logo image" class="logo-img" />
+               </a>
+               <div
+                  class="collapse navbar-collapse justify-content-end"
+                  id="navbarNavDropdown"
+               >
+                  <ul class="navbar-nav ms-auto">
+                     <li class="nav-item dropdown me-4">
+                        <a
+                           class="nav-link dropdown-toggle"
+                           aria-current="page"
+                           href="#"
+                           >Home</a
+                        >
+                        <div class="dropdown-menu dropdown-menu-1">
+                           <div class="container">
+                              <div class="row">
+                                 <div class="col-4">
+                                    <a href="#" class="ps-0">Wavy</a>
+                                    <ul class="dropdown-sub-menu">
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Languages</a
+                                          >
+                                       </li>
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Music Courses</a
+                                          >
+                                       </li>
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Music School</a
+                                          >
+                                       </li>
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Ballet</a
+                                          >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="col-4">
+                                    <a href="#" class="ps-0">Sunny</a>
+                                    <ul class="dropdown-sub-menu">
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Draw & Paint</a
+                                          >
+                                       </li>
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Illustration</a
+                                          >
+                                       </li>
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Language</a
+                                          >
+                                       </li>
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Acting</a
+                                          >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="col-4">
+                                    <a href="#" class="ps-0">Shady</a>
+                                    <ul class="dropdown-sub-menu">
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Music</a
+                                          >
+                                       </li>
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Contemporary Ballet</a
+                                          >
+                                       </li>
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Jazz Ballet</a
+                                          >
+                                       </li>
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Acting</a
+                                          >
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="nav-item active dropdown me-4">
+                        <a class="nav-link dropdown-toggle active" href="#"
+                           >About</a
+                        >
+                        <ul class="dropdown-menu dropdown-menu-2">
+                           <li><a href="#" class="dropdown-item ps-0">About Us</a></li>
+                           <li><a href="#" class="dropdown-item ps-0">About Me</a></li>
+                           <li><a href="#" class="dropdown-item ps-0">Our Team</a></li>
+                           <li><a href="#" class="dropdown-item ps-0">History</a></li>
+                           <li>
+                              <a href="#" class="dropdown-item ps-0">Testimonials</a>
+                           </li>
+                           <li><a href="#" class="dropdown-item ps-0">Contact</a></li>
+                           <li>
+                              <a href="#" class="dropdown-item ps-0">Coming Soon</a>
+                           </li>
+                           <li><a href="#" class="dropdown-item ps-0">404</a></li>
+                        </ul>
+                     </li>
+                     <li class="nav-item dropdown me-4">
+                        <a class="nav-link dropdown-toggle" href="#">Course</a>
+                        <ul class="dropdown-menu dropdown-menu-2">
+                           <li><a href="#" class="dropdown-item ps-0">Courses</a></li>
+                           <li>
+                              <a href="#" class="dropdown-item ps-0">Single Courses</a>
+                           </li>
+                           <li><a href="#" class="dropdown-item ps-0">Schedule</a></li>
+                           <li><a href="#" class="dropdown-item ps-0">Workshop</a></li>
+                           <li>
+                              <a href="#" class="dropdown-item ps-0"
+                                 >Workshops & Events</a
+                              >
+                           </li>
+                           <li><a href="#" class="dropdown-item ps-0">Get Quote</a></li>
+                        </ul>
+                     </li>
+                     <li class="nav-item dropdown me-4">
+                        <a class="nav-link dropdown-toggle" href="#">Blog</a>
+                        <ul class="dropdown-menu dropdown-menu-2">
+                           <li>
+                              <a href="#" class="dropdown-item ps-0">Standard view</a>
+                           </li>
+                           <li>
+                              <a href="#" class="dropdown-item ps-0">Columns view</a>
+                           </li>
+                           <li>
+                              <a href="#" class="dropdown-item ps-0">Simple view</a>
+                           </li>
+                           <li>
+                              <a href="#" class="dropdown-item ps-0">Grid view </a>
+                           </li>
+                           <li>
+                              <a href="#" class="dropdown-item ps-0">Single Post</a>
+                           </li>
+                           <li><a href="#" class="dropdown-item ps-0">Galleries</a></li>
+                        </ul>
+                     </li>
+                     <li class="nav-item dropdown me-4">
+                        <a class="nav-link dropdown-toggle" href="#">Shop</a>
+                        <ul class="dropdown-menu dropdown-menu-3">
+                           <li><a href="#" class="dropdown-item ps-0">Products</a></li>
+                           <li><a href="#" class="dropdown-item ps-0">Cart</a></li>
+                           <li><a href="#" class="dropdown-item ps-0">Checkout</a></li>
+                           <li>
+                              <a href="#" class="dropdown-item ps-0">My Account</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Elements</a>
+                        <div class="dropdown-menu dropdown-menu-4">
+                           <div class="dropdown-sub-menu container">
+                              <div class="row gx-5">
+                                 <div class="col-4">
+                                    <a href="#" class="ps-0">Base</a>
+                                    <ul class="dropdown-sub-menu">
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Headlines</a
+                                          >
+                                       </li>
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Buttons & Icons</a
+                                          >
+                                       </li>
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Images</a
+                                          >
+                                       </li>
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Organic Animation</a
+                                          >
+                                       </li>
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Inner Row & Column</a
+                                          >
+                                       </li>
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Countdown & Counter</a
+                                          >
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="col-4">
+                                    <a href="#" class="ps-0">Common</a>
+                                    <ul class="dropdown-sub-menu">
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Price List & Progress Bar</a
+                                          >
+                                       </li>
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Google Maps</a
+                                          >
+                                       </li>
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Service</a
+                                          >
+                                       </li>
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Accordions & Tabs
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Card & Event
+                                          </a>
+                                       </li>
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Schedule & Step line
+                                          </a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="col-4">
+                                    <a href="#" class="ps-0">Presentational</a>
+                                    <ul class="dropdown-sub-menu">
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Team</a
+                                          >
+                                       </li>
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Slider</a
+                                          >
+                                       </li>
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Testimonials</a
+                                          >
+                                       </li>
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Cost Calculator</a
+                                          >
+                                       </li>
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Social Media</a
+                                          >
+                                       </li>
+                                       <li>
+                                          <a href="#" class="dropdown-item ps-0"
+                                             >Blog Layouts</a
+                                          >
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
                   </ul>
-               </ul>
+                  <ul class="social-list navbar-nav align-items-center">
+                     <li class="nav-item tel me-3">
+                        <button class="btn-call  border px-3 rounded-pill">
+                           <a
+                              href="tel: (+1) 555 234-8765"
+                              class="nav-link"
+                           >
+                              <i class="fa-solid fa-phone-flip"></i>
+                              (+1) 555 234-8765</a
+                           >
+                        </button>
+                     </li>
+                     <li class="nav-item social-item">
+                        <a href="" class="nav-link">
+                           <i class="fa-brands fa-twitter"></i>
+                        </a>
+                     </li>
+                     <li class="nav-item social-item">
+                        <a href="" class="nav-link">
+                           <i class="fa-brands fa-facebook"></i>
+                        </a>
+                     </li>
+                     <li class="nav-item social-item">
+                        <a href="" class="nav-link">
+                           <i class="fa-brands fa-youtube"></i>
+                        </a>
+                     </li>
+                     <li class="nav-item social-item">
+                        <a href="" class="nav-link">
+                           <i class="fa-brands fa-instagram"></i>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
             </div>
-         </div>
-      </nav>
+         </nav>
+      </section>
+
       <!-- Bootstrap JavaScript Libraries -->
       <script
          src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
