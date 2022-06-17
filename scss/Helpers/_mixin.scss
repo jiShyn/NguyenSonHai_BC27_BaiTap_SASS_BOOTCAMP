@@ -25,3 +25,8 @@
  @mixin text-right {
 	text-align: right;
  }
+
+ @mixin px-small {
+	padding-left: $spacing-small;
+	padding-right: $spacing-small;
+ }
