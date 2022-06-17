@@ -30,3 +30,18 @@
 	padding-left: $spacing-small;
 	padding-right: $spacing-small;
  }
+
+ @mixin heading-xs-text {
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: $weight-bold;
+	line-height: 1.2;
+	color: $primary-color;
+ }
+
+ @mixin title {
+	font-size: 3.15rem;
+	font-weight: $weight-bold-2;
+	line-height: 1.2;
+	color: $text-color;
+ }

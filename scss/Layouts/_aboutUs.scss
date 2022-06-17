@@ -1,6 +1,47 @@
+// both small screen & larg screen
 .about-us {
-	background-image: url(../../img/yellow_top_wave_01.png);
-	background-repeat: no-repeat;
-	height: 2000px;
-	width: 100%;
+   width: 100%;
+
+   .title {
+      @include title;
+   }
+}
+
+// only small screen
+@media (max-width: 991px) {
+   .about-us {
+      margin-top: $mt-xs-about-section;
+
+      .content {
+         padding-top: 4em;
+         padding-bottom: 4em;
+
+         .heading-text {
+            @include heading-xs-text;
+            margin-bottom: 0.5em;
+         }
+      }
+   }
+}
+
+//only >= large screen
+@media (min-width: 992px) {
+   .about-us {
+      margin-top: $mt-lg-about-section;
+
+      .content {
+         padding-top: 8em;
+         padding-bottom: 8em;
+
+         .heading-text {
+            @include heading-xs-text;
+            font-size: 16.5px;
+            margin-bottom: 0.5em;
+         }
+
+         .title {
+            font-size: 57px;
+         }
+      }
+   }
 }
