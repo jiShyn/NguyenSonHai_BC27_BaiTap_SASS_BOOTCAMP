@@ -507,4 +507,10 @@ body {
   .navbar-expand-lg .navbar-nav .dropdown-menu.dropdown-menu-1 {
     transform: translateX(-40%);
   }
+}
+.about-us {
+  background-image: url(../../img/yellow_top_wave_01.png);
+  background-repeat: no-repeat;
+  height: 2000px;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
