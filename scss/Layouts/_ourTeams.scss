@@ -1,8 +1,17 @@
 .our-team {
 	.wrapper-content {
 		background-color: $light-purple;
-		.card {
-			border: none;
-		}
+		
+		
 	}
+}
+
+@media (max-width: 576px) {
+	
+}
+
+@media (min-width: 992px) {
+	.mb-lg-custom {
+		margin-bottom: 4rem;
+ }
 }

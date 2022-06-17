@@ -3,7 +3,7 @@
    width: 100%;
 
    .title {
-      @include title;
+      @include title(3.15rem);
    }
 }
 
@@ -17,7 +17,7 @@
          padding-bottom: 4em;
 
          .heading-text {
-            @include heading-xs-text;
+            @include heading-xs-text(15px);
             margin-bottom: 0.5em;
          }
       }
@@ -34,7 +34,7 @@
          padding-bottom: 8em;
 
          .heading-text {
-            @include heading-xs-text;
+            @include heading-xs-text(15px);
             font-size: 16.5px;
             margin-bottom: 0.5em;
          }

@@ -1,0 +1,27 @@
+.card {
+	border-color: $light-purple;
+	border-radius: $border-radius;
+
+	img {
+	border-radius: $border-radius;
+	}
+
+	.card-body {
+		@include py-card-body;
+		text-align: center;
+
+		h4.card-country {
+			@include heading-xs-text(0.75rem);
+			margin-bottom: $mb-card-body-item;
+		}
+
+		p.card-name {
+			@include title(1.55rem);
+			margin-bottom: $mb-card-body-item;
+		}
+
+		p.card-text {
+			@include text-style-roboto;
+		}
+	}
+}
