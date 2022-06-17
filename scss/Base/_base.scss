@@ -1,8 +1,12 @@
-*{
-	font-family: 'Montserrat', sans-serif;
-	color: $text-color;
+* {
+   font-family: "Montserrat", sans-serif;
+   color: $text-color;
 }
 body {
-	background-color: $white-bg;
-	height: 3000px;
+   background-color: $white-bg;
+   height: 3000px;
+}
+
+.mb-lg-custom {
+   margin-bottom: 4rem !important;
 }

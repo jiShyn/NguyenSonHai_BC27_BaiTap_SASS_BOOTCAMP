@@ -248,6 +248,10 @@ body {
   height: 3000px;
 }
 
+.mb-lg-custom {
+  margin-bottom: 4rem !important;
+}
+
 .btn-call {
   border: 2px solid #b61984 !important;
   padding-top: 6px;
@@ -595,4 +599,10 @@ body {
   .about-us .content .title {
     font-size: 57px;
   }
+}
+.our-team .wrapper-content {
+  background-color: #dcd1f0;
+}
+.our-team .wrapper-content .card {
+  border: none;
 }/*# sourceMappingURL=main.css.map */
