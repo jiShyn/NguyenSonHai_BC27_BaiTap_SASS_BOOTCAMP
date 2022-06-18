@@ -1,27 +1,42 @@
 .card {
-	border-color: $light-purple;
-	border-radius: $border-radius;
+   border-color: $light-purple;
+   border-radius: $border-radius;
+   transition: box-shadow 0.3s ease-out;
+   overflow: hidden;
 
-	img {
-	border-radius: $border-radius;
-	}
+   .wrapper-img {
+		border-radius: $border-radius;
+		overflow: hidden;
+      img {
+         border-radius: $border-radius;
+         transition: all 0.6s ease-in-out;
 
-	.card-body {
-		@include py-card-body;
-		text-align: center;
+         &:hover {
+            @include hover-card-img;
+         }
+      }
+   }
 
-		h4.card-country {
-			@include heading-xs-text(0.75rem);
-			margin-bottom: $mb-card-body-item;
-		}
+   .card-body {
+      @include py-card-body;
+      text-align: center;
 
-		p.card-name {
-			@include title(1.55rem);
-			margin-bottom: $mb-card-body-item;
-		}
+      h4.card-country {
+         @include heading-xs-text(0.75rem);
+         margin-bottom: $mb-card-body-item;
+      }
 
-		p.card-text {
-			@include text-style-roboto;
-		}
-	}
+      p.card-name {
+         @include title(1.45rem);
+         margin-bottom: $mb-card-body-item;
+      }
+
+      p.card-text {
+         @include text-style-roboto;
+      }
+   }
+
+   &:hover {
+      @include hover-card;
+   }
 }

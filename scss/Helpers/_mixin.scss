@@ -57,3 +57,11 @@
 	font-weight: $font-weight-light;
 	line-height: 1.8em;
  }
+
+ @mixin hover-card {
+	box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);
+ }
+
+ @mixin hover-card-img {
+	transform:scale3d(1.075,1.075,1.075);
+ }

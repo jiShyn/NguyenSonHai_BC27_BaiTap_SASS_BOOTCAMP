@@ -43,5 +43,32 @@
             font-size: 57px;
          }
       }
+
+      .top-bg img {
+         margin-top: -8em;
+      }
+   }
+}
+
+@media (min-width: 992px) and (max-width: 1201px) {
+   .about-us {
+      .content {
+         .title {
+            font-size: 3rem;
+         }
+      }
+      
+      .top-bg img {
+         margin-top: -8em;
+      }
+   }
+}
+
+@media (min-width: 1400px) {
+   .about-us {
+      .top-bg img {
+         margin-top: -14em;
+         width: 100%;
+      }
    }
 }

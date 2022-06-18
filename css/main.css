@@ -281,9 +281,19 @@ body {
 .card {
   border-color: #dcd1f0;
   border-radius: 14px;
+  transition: box-shadow 0.3s ease-out;
+  overflow: hidden;
 }
-.card img {
+.card .wrapper-img {
   border-radius: 14px;
+  overflow: hidden;
+}
+.card .wrapper-img img {
+  border-radius: 14px;
+  transition: all 0.6s ease-in-out;
+}
+.card .wrapper-img img:hover {
+  transform: scale3d(1.075, 1.075, 1.075);
 }
 .card .card-body {
   padding-top: 2em;
@@ -299,7 +309,7 @@ body {
   margin-bottom: 0.7em;
 }
 .card .card-body p.card-name {
-  font-size: 1.55rem;
+  font-size: 1.45rem;
   font-weight: 700;
   line-height: 1.2;
   color: #181818;
@@ -310,6 +320,9 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.8em;
+}
+.card:hover {
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
 }
 
 .header {
@@ -630,13 +643,44 @@ body {
   .about-us .content .title {
     font-size: 57px;
   }
+  .about-us .top-bg img {
+    margin-top: -8em;
+  }
+}
+@media (min-width: 992px) and (max-width: 1201px) {
+  .about-us .content .title {
+    font-size: 3rem;
+  }
+  .about-us .top-bg img {
+    margin-top: -8em;
+  }
+}
+@media (min-width: 1400px) {
+  .about-us .top-bg img {
+    margin-top: -14em;
+    width: 100%;
+  }
+}
+.our-team {
+  position: relative;
+}
+.our-team .our-team-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #dcd1f0;
 }
 .our-team .wrapper-content {
   background-color: #dcd1f0;
 }
-
-@media (min-width: 992px) {
-  .mb-lg-custom {
-    margin-bottom: 4rem;
-  }
+.our-team .wrapper-content .row-2 .card {
+  z-index: 1;
+}
+.our-team .bottom-bg img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
