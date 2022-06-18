@@ -248,6 +248,23 @@ body {
   height: 3000px;
 }
 
+input[type=submit] {
+  outline: none;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  font-weight: 600;
+  line-height: 1;
+  border: none;
+  background: transparent;
+  transition: all 300ms ease;
+  color: #fff;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  box-shadow: 0 0 0 3em #b61984 inset;
+}
+
 .btn-call {
   border: 2px solid #b61984 !important;
   padding-top: 6px;
@@ -276,6 +293,11 @@ body {
 }
 .btn-call:hover a.nav-link, .btn-call:hover a.nav-link i {
   color: #b61984 !important;
+}
+
+.btn-form {
+  border-radius: 50px;
+  min-width: 150px;
 }
 
 .card {
@@ -423,10 +445,13 @@ body {
     color: #b61984 !important;
   }
 
-  .nav-link.dropdown-toggle:hover ~ .dropdown-menu {
+  .nav-link.dropdown-toggle:focus ~ .dropdown-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .nav-link.dropdown-toggle:focus i {
+    color: #b61984 !important;
   }
   .nav-link.dropdown-toggle ~ .dropdown-menu-1 .col-lg-4 > a {
     display: block;
@@ -683,4 +708,91 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+
+.course {
+  padding-top: 4em;
+  position: relative;
+}
+.course .contact-form {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.course .contact-form .form-title {
+  margin-bottom: 50px;
+}
+.course .contact-form .form-title .title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #181818;
+  text-transform: capitalize;
+}
+.course .contact-form form .contact .row i {
+  position: absolute;
+  left: 2em;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #b61984;
+}
+.course .contact-form form .contact .row i.message-icon {
+  top: 1.2em;
+  transform: none;
+}
+.course .contact-form form .contact .row input {
+  padding: 1em 1em 1em 3.5em !important;
+  font-size: 0.8em !important;
+  height: 3.4em;
+  font-size: "Roboto", Arial, Helvetica, sans-serif;
+}
+.course .contact-form form .contact .row select {
+  font-size: 0.8em;
+  padding: 0 0 0 3.5em;
+  height: 3.4em;
+  color: #6c757d;
+}
+.course .contact-form form .contact .row textarea {
+  border-radius: 20px;
+  padding: 1em 1em 1em 3.5em !important;
+  height: 90px;
+  line-height: 1.5;
+  font-size: 0.8em !important;
+  font-size: "Roboto", Arial, Helvetica, sans-serif;
+}
+.course .contact-form form .contact .row.row-3.wrapper-btn {
+  margin-bottom: 4em;
+}
+.course .contact-form form .contact .row.row-3.wrapper-btn .btn-form {
+  padding: 0 !important;
+}
+.course .wrapper-bg {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .course .contact i.user-icon {
+    top: 40% !important;
+  }
+}
+@media (min-width: 992px) {
+  .course {
+    padding-top: 5em;
+  }
+  .course .contact-form {
+    max-width: 365px;
+  }
+}
+@media (min-width: 1200px) {
+  .course .contact-form {
+    max-width: 400px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -116,10 +116,14 @@
 
    .nav-link {
       &.dropdown-toggle {
-         &:hover ~ .dropdown-menu {
+         &:focus ~ .dropdown-menu {
             display: flex;
             flex-direction: column;
             align-items: center;
+         }
+
+         &:focus i {
+            @include hover-text;
          }
 
          ~ .dropdown-menu-1 {

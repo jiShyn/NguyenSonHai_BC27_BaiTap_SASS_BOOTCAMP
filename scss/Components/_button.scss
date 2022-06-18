@@ -25,12 +25,13 @@
       @include hover-btn-primary;
    }
 
-   // &:hover i {
-   //    @include hover-text;
-   // }
-
    &:hover a.nav-link,
    &:hover a.nav-link i {
       @include hover-text;
    }
+}
+
+.btn-form {
+   border-radius: 50px;
+   min-width: 150px;
 }
