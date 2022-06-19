@@ -4,7 +4,6 @@
 }
 body {
    background-color: $white-bg;
-   height: 3000px;
 }
 
 input[type="submit"] {
@@ -22,4 +21,12 @@ input[type="submit"] {
    color: $white-text;
    font-family: "Montserrat", Arial, Helvetica, sans-serif;
    box-shadow: 0 0 0 3em $primary-color inset;
+}
+
+.form-control:focus {
+   color: inherit;
+   background-color: inherit;
+   border-color: none;
+   outline: 0;
+   box-shadow: unset;
 }

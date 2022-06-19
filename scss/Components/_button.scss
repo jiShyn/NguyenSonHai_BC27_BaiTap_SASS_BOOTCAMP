@@ -20,7 +20,6 @@
       color: $white-text !important;
    }
 
-
    &:hover {
       @include hover-btn-primary;
    }
@@ -34,4 +33,17 @@
 .btn-form {
    border-radius: 50px;
    min-width: 150px;
+}
+
+.btn-footer {
+   background-color: $white-bg;
+   box-shadow: 0 0 0 3em #fff inset !important;
+   color: $text-color !important;
+   height: 4em;
+   border: 1px solid #fff !important;
+   transition: box-shadow 0.3s linear !important;
+
+   &:hover {
+      @include  hover-btn-footer;
+   }
 }

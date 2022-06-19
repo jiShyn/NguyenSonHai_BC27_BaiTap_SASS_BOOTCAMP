@@ -9,6 +9,10 @@
    box-shadow: unset;
    border: 2px solid $border-primary-color;
 }
+@mixin hover-btn-footer {
+   color: $white-text !important;
+   box-shadow: unset !important;
+}
 
 @mixin hover-text {
    color: $primary-color !important;
@@ -91,4 +95,22 @@
    line-height: 1.5;
    font-size: 0.8em !important;
    font-size: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+@mixin headline-style-footer {
+   color: $white-text;
+   font-size: 1.55rem;
+   font-weight: $weight-bold-2;
+   line-height: 1.2;
+   text-transform: capitalize;
+   margin-bottom: 1em;
+}
+
+@mixin text-style-footer {
+   color: $white-text;
+   font-size: 0.8em;
+   font-family: "Roboto", sans-serif;
+   font-weight: $font-weight-light;
+   line-height: 1.1;
+   text-transform: capitalize;
 }

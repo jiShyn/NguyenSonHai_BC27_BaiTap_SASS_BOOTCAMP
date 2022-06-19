@@ -245,7 +245,6 @@ input[type=button] {
 
 body {
   background-color: #fff;
-  height: 3000px;
 }
 
 input[type=submit] {
@@ -263,6 +262,14 @@ input[type=submit] {
   color: #fff;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   box-shadow: 0 0 0 3em #b61984 inset;
+}
+
+.form-control:focus {
+  color: inherit;
+  background-color: inherit;
+  border-color: none;
+  outline: 0;
+  box-shadow: unset;
 }
 
 .btn-call {
@@ -298,6 +305,19 @@ input[type=submit] {
 .btn-form {
   border-radius: 50px;
   min-width: 150px;
+}
+
+.btn-footer {
+  background-color: #fff;
+  box-shadow: 0 0 0 3em #fff inset !important;
+  color: #181818 !important;
+  height: 4em;
+  border: 1px solid #fff !important;
+  transition: box-shadow 0.3s linear !important;
+}
+.btn-footer:hover {
+  color: #fff !important;
+  box-shadow: unset !important;
 }
 
 .card {
@@ -751,6 +771,7 @@ input[type=submit] {
   font-size: "Roboto", Arial, Helvetica, sans-serif;
 }
 .course .contact-form form .contact .row select {
+  cursor: pointer;
   font-size: 0.8em;
   padding: 0 0 0 3.5em;
   height: 3.4em;
@@ -795,4 +816,74 @@ input[type=submit] {
   .course .contact-form {
     max-width: 400px;
   }
+}
+.footer {
+  background-color: #b61984;
+  padding-top: 8em;
+  padding-bottom: 8em;
+  background-image: url(../../img/footer_background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer div.item {
+  margin-bottom: 5em;
+}
+.footer div.item .headline {
+  display: block;
+  color: #fff;
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: capitalize;
+  margin-bottom: 1em;
+}
+.footer div.item .list li.item {
+  margin-bottom: 0.2em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.footer div.item .list li.item i {
+  color: #fff;
+  font-size: 0.8rem;
+  margin-right: 1em;
+}
+.footer div.item .list li.item span.item-desc {
+  color: #fff;
+  font-size: 0.8em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: capitalize;
+}
+.footer div.item .list li.item a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: capitalize;
+}
+.footer div.item .list li.item.social-item {
+  margin-top: 1em;
+  border-bottom: unset;
+}
+.footer div.item:nth-last-child(1) form input[type=text] {
+  background-color: #b61984;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.7em;
+  transition: all 500ms ease;
+}
+.footer div.item:nth-last-child(1) form input[type=text]:focus {
+  border-color: #fff;
+}
+.footer div.item:nth-last-child(1) form input[type=text]::-moz-placeholder {
+  color: #fff;
+}
+.footer div.item:nth-last-child(1) form input[type=text]:-ms-input-placeholder {
+  color: #fff;
+}
+.footer div.item:nth-last-child(1) form input[type=text]::placeholder {
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

@@ -42,6 +42,7 @@
                }
 
                select {
+                  cursor: pointer;
                   @include select-style;
                }
 
