@@ -30,11 +30,18 @@
          crossorigin="anonymous"
          referrerpolicy="no-referrer"
       />
+
+      <!-- Animated -->
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
       <!-- CSS -->
       <link rel="stylesheet" href="./css/main.css" />
    </head>
    <body>
-      <header class="header fixed-top">
+      <header class="header fixed-top animate__bounceInDown animate__animated">
          <nav class="navbar navbar-expand-lg">
             <div class="container">
                <button
@@ -556,7 +563,7 @@
             <div class="container">
                <div class="row">
                   <div class="col-12 col-lg-6">
-                     <div class="content">
+                     <div class="content animate__animated animate__bounceInLeft wow">
                         <h1 class="heading-text">about us</h1>
                         <span class="title">The language teaching experts</span>
                      </div>
@@ -565,7 +572,7 @@
                      <img
                         src="./img/hero_team.png"
                         alt="hero team image"
-                        class="img-fluid d-block"
+                        class="img-fluid d-block  animate__animated animate__bounceIn wow"
                      />
                   </div>
                </div>
@@ -588,7 +595,7 @@
                >
                   <div class="row mb-5 mb-sm-4 mb-lg-5">
                      <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="card">
+                        <div class="card animate__animated animate__bounceInLeft wow">
                            <div class="wrapper-img">
                               <img
                                  src="./img/teacher_1.jpg"
@@ -607,7 +614,7 @@
                         </div>
                      </div>
                      <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="card">
+                        <div class="card animate__animated animate__bounceInLeft wow">
                            <div class="wrapper-img">
                               <img
                                  src="./img/teacher_2.jpg"
@@ -625,7 +632,7 @@
                         </div>
                      </div>
                      <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="card">
+                        <div class="card animate__animated animate__bounceInLeft wow">
                            <div class="wrapper-img">
                               <img
                                  src="./img/teacher_3.jpg"
@@ -644,7 +651,7 @@
                         </div>
                      </div>
                      <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="card">
+                        <div class="card animate__animated animate__bounceInLeft wow">
                            <div class="wrapper-img">
                               <img
                                  src="./img/teacher_4.jpg"
@@ -665,7 +672,7 @@
                   </div>
                   <div class="row row-2">
                      <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="card">
+                        <div class="card animate__animated animate__bounceInLeft wow">
                            <div class="wrapper-img">
                               <img
                                  src="./img/teacher_5.jpg"
@@ -684,7 +691,7 @@
                         </div>
                      </div>
                      <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="card">
+                        <div class="card animate__animated animate__bounceInLeft wow">
                            <div class="wrapper-img">
                               <img
                                  src="./img/teacher_6.jpg"
@@ -702,7 +709,7 @@
                         </div>
                      </div>
                      <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="card">
+                        <div class="card animate__animated animate__bounceInLeft wow">
                            <div class="wrapper-img">
                               <img
                                  src="./img/teacher_7.jpg"
@@ -721,7 +728,7 @@
                         </div>
                      </div>
                      <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="card">
+                        <div class="card animate__animated animate__bounceInLeft wow">
                            <div class="wrapper-img">
                               <img
                                  src="./img/teacher_8.jpg"
@@ -769,13 +776,13 @@
                         <img
                            src="./img/conatct_inner.png"
                            alt=""
-                           class="img-fluid d-block"
+                           class="img-fluid d-block animate__bounceInLeft animate__animated wow"
                         />
                      </div>
                   </div>
 
                   <div class="col-12 col-lg-6">
-                     <div class="contact-form mx-md-auto">
+                     <div class="contact-form mx-md-auto animate__bounceInRight animate__animated wow">
                         <div class="form-title">
                            <span class="title">find your course</span>
                         </div>
@@ -843,7 +850,7 @@
          </section>
       </main>
 
-      <footer class="footer">
+      <footer class="footer animate__zoomInUp animate__animated wow">
          <div class="container">
             <div class="row">
                <div class="col-sm-6 col-lg-3">
@@ -950,5 +957,12 @@
          integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
          crossorigin="anonymous"
       ></script>
+
+      <!-- link wowjs.uk -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+      <!-- active  wowjs.uk -->
+      <script>
+         new WOW().init();
+      </script>
    </body>
 </html>
